@@ -1,0 +1,165 @@
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+/* html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+} */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.15;
+  margin:0;
+  padding:0;
+}
+
+
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+.svg-container {
+  padding:20px;
+  border-bottom: 1px solid #ddd;
+}
+.svg-container:hover{
+  background-color: #eee;
+}
+
+.pill-progress {
+  width: 500px;
+}
+.pill-progress g {
+  clip-path:url(#pill-progress-clip);
+}
+.pill-progress .background, .pill-progress text {
+  fill:#eee;
+}
+.pill-progress .progress{
+  fill:#0282A7;
+}
+.pill-progress .progress-end{
+  fill:#9B99E1;
+}
+.pill-progress .reflection {
+  stroke:rgba(255,255,255,0.2);
+  stroke-width:5px;
+  stroke-linecap:round;
+  fill:none;
+}
+
+@keyframes oscillate {
+  from { 
+    transform: scale(1);
+    opacity: 1;
+  }
+  to { 
+    transform: scale(0.6);
+    opacity: 0.4;
+  }
+}
+
+@keyframes oscillate {
+  0% { 
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% { 
+    transform: scale(0.6);
+    opacity: 0.4;
+  }
+  75% { 
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% { 
+    transform: scale(0.7);
+    opacity: 0.8;
+  }
+
+}
+
+.heart {
+  fill:red;
+  animation: oscillate 750ms ease-in-out 0s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes move-eyes {
+  from { 
+    transform: rotate(0);
+  }
+  to { 
+    transform: rotate(-46deg);
+  }
+}
+
+.eye-1 {
+  animation: move-eyes 1s ease-in-out 0s infinite alternate;
+  transform-origin: 20px 23px;
+}
+
+.eye-2 {
+  animation: move-eyes 1s ease-in-out 0s infinite alternate-reverse;
+  transform-origin: 70px 23px;
+}
+
+@keyframes show-lines {
+  from { 
+    opacity: 0.4;
+    transform:scaleY(0.1) translateY(0);
+  }
+  to { 
+    opacity: 1;
+    transform:scaleY(1) translateY(10px);
+  }
+}
+
+.line1 {
+  animation: show-lines 500ms ease-in-out 0s infinite;
+  transform-origin: 25px 70px;
+}
+.line2 {
+  animation: show-lines 500ms ease-in-out 300ms infinite;
+  transform-origin: 25px 70px;
+}
+.line3 {
+  animation: show-lines 500ms ease-in-out 750ms infinite;
+  transform-origin: 25px 70px;
+}
+.line4 {
+  animation: show-lines 500ms ease-in-out 0s infinite;
+  transform-origin: 25px 30px;
+}
+.line5 {
+  animation: show-lines 500ms ease-in-out 0s infinite;
+  transform-origin: 25px 35px;
+}
+.line6 {
+  animation: show-lines 500ms ease-in-out 0s infinite;
+  transform-origin: 25px 10px;
+}

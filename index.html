@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SVG Sample</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>SVG Sample App</h1>
+  <br><br>
+  <div class="svg-container">
+    <svg viewBox="0 0 500 50" class="pill-progress">
+      <refs>
+        <clipPath id="pill-progress-clip">
+          <path
+            d="m0,0 m0,25 a25,25 0 0,1 25,-25 l450,0 a25,25 0 0,1 25,25 a25,25 0 0,1 -25,25 l-450,0 a25,25 0 0,1 -25,-25" />
+        </clipPath>
+      </refs>
+      <g>
+        <path class="background"
+          d="m0,0 m0,25 a25,25 0 0,1 25,-25 l450,0 
+          a25,25 0 0,1 25,25 a25,25 0 0,1 -25,25 
+          l-450,0 a25,25 0 0,1 -25,-25"/>
+        <path class="progress"
+          d="m0,0 m0,25 a25,25 0 0,1 25,-25 l250,0 
+          q12 12,0 25 q-12 12,0 25 l-250,0 
+          a25,25 0 0,1 -25,-25"/>
+        <path class="progress-end" 
+          d="m0,0 m275,25 q12 12,0 25 q-12 -12,0 -25"/>
+        <path class="reflection"
+          d="m0,0 m7,25 a20,20 0 0,0 17,17 l235,0"/>
+        <path class="reflection" d="m100,7 l60,0"/>
+        <text x="0" y="0" dx="240" dy="30">50%</text>
+      </g>
+    </svg>
+  </div>
+  <div class="svg-container">
+    <svg width="100px" height="100px">
+      <path class="heart" d="m0,0 m0,25 a25,25 0 0,1 50,0 a25,25 0 0,1 50,0 q0 25,-50 68 q-50 -40,-50 -68">
+    </svg>
+  </div>
+  <div class="svg-container">
+    <svg width="100px" height="100px">
+      <path d="m0,0 m0,25 a25,25 0 0,1 50,0 a25,25 0 0,1 50,0 q0 35,-50 68 q-50 -32,-50 -68" style="fill:#8D7578"/>
+      <circle cx="25" cy="25" r="20" style="fill:#fff"/>
+      <circle cx="75" cy="25" r="20" style="fill:#fff"/>
+      <circle class="eye-1" cx="25" cy="35" r="10" style="fill:#000"/>
+      <circle class="eye-2" cx="75" cy="35" r="10" style="fill:#000"/>
+      <path d="m40,55 l10,-10 l10,10 l-10,20 l-10,-20" style="fill:#000"/>
+    </svg>
+  </div>
+  <div class="svg-container">
+    <svg width="100px" height="100px">
+      <path 
+      d="m0,0 m45,10 a5,5 0 0,1 10,0 l0,30 l45,20 l0,10 l-45,-10 l0,30 l15,5 l0,5 l-20,-3 
+      l-20,3 l0,-5 l15,-5 l0,-30 l-45,10 l0,-10 l45,-20 l0,-30" style="fill:#000"/>
+      <line class="line1" x1="25" y1="70" x2="25" y2="90" style="stroke:#aaa;stroke-width:2px;stroke-linecap:round"/>
+      <line class="line2" x1="15" y1="75" x2="15" y2="95" style="stroke:#aaa;stroke-width:2px;stroke-linecap:round"/>
+      <line class="line3" x1="5" y1="75" x2="5" y2="95" style="stroke:#aaa;stroke-width:2px;stroke-linecap:round"/>
+      <line class="line1" x1="75" y1="70" x2="75" y2="90" style="stroke:#aaa;stroke-width:2px;stroke-linecap:round"/>
+      <line class="line2" x1="85" y1="75" x2="85" y2="95" style="stroke:#aaa;stroke-width:2px;stroke-linecap:round"/>
+      <line class="line3" x1="95" y1="75" x2="95" y2="95" style="stroke:#aaa;stroke-width:2px;stroke-linecap:round"/>
+
+      <line class="line4" x1="20" y1="30" x2="20" y2="35" style="stroke:#aaa;stroke-width:2px;stroke-linecap:round"/>
+      <line class="line5" x1="10" y1="35" x2="10" y2="40" style="stroke:#aaa;stroke-width:2px;stroke-linecap:round"/>
+      <line class="line6" x1="40" y1="10" x2="40" y2="15" style="stroke:#aaa;stroke-width:2px;stroke-linecap:round"/>
+      <line class="line4" x1="80" y1="30" x2="80" y2="35" style="stroke:#aaa;stroke-width:2px;stroke-linecap:round"/>
+      <line class="line5" x1="90" y1="35" x2="90" y2="40" style="stroke:#aaa;stroke-width:2px;stroke-linecap:round"/>
+      <line class="line6" x1="60" y1="10" x2="60" y2="15" style="stroke:#aaa;stroke-width:2px;stroke-linecap:round"/>
+    </svg>
+  </div>
+</body>
+
+</html>
